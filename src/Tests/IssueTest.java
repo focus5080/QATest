@@ -127,8 +127,7 @@ public class IssueTest  extends BaseTest {
             Thread.sleep(5000);
             Actions action = new Actions(driver);
             action.doubleClick(driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span"))).doubleClick().build().perform();
-            Thread.sleep(5000);
-            driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span")).sendKeys("Test");
+            driver.findElement(By.xpath(".//*/div/div[8]/div[1]/div/input")).sendKeys("Test");
 
 
         }
