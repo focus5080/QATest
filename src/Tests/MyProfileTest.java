@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.Assert.assertTrue;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * Created by asus on 09.02.17.

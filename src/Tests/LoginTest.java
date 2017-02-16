@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.io.InterruptedIOException;
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by asus on 08.02.17.
@@ -20,41 +20,43 @@ public class LoginTest extends BaseTest {
     public void correctLogin() throws InterruptedIOException {
         driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
-        loginPage.logout(driver);
+        LoginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
+        LoginPage.logout(driver);
 
     }
 
     @Test
-    public void incorrectEmail() {
+    public void incorrectEmail() throws InterruptedIOException {
         driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus@gmail.com", "focus5080");
+        LoginPage.login(driver,"focus@gmail.com", "focus5080");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        WebElement errorMessage = driver.findElement(By.xpath("//*[@id='new_user']/div[1]/span"));
+        WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("Invalid Email or password."));
 
+
     }
 
     @Test
-    public void incorrectPassword() {
+    public void incorrectPassword() throws InterruptedIOException {
         driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus5080+44@gmail.com", "123545");
+        LoginPage.login(driver,"focus5080+44@gmail.com", "123545");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        WebElement errorMessage = driver.findElement(By.xpath("//*[@id='new_user']/div[1]/span"));
+        WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("Invalid Email or password."));
 
+
     }
 
     @Test
-    public void emptyFields() {
+    public void emptyFields() throws InterruptedIOException {
         driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"", "");
+        LoginPage.login(driver,"", "");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        WebElement errorMessage = driver.findElement(By.xpath("//*[@id='new_user']/div[1]/span"));
-        assertTrue(errorMessage.getText().contains("Can`t be blank"));
+        WebElement errorMessage = driver.findElement(By.className("message"));
+        assertTrue(errorMessage.getText().contains("can't be blank"));
 
     }
 }

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginPage {
 
 
-        public void login (WebDriver driver, String email, String pass){
+        public static void login(WebDriver driver, String email, String pass){
         driver.findElement(By.id("user_email")).click();
         driver.findElement(By.id("user_email")).clear();
         driver.findElement(By.id("user_email")).sendKeys(email);
@@ -22,7 +22,7 @@ public class LoginPage {
         driver.findElement(By.name("commit")).click();
     }
 
-    public void logout(WebDriver driver) throws InterruptedIOException {
+    public static void logout(WebDriver driver) throws InterruptedIOException {
         // driver.manage().timeouts().implicityWait(5, TimeUnit.SECONDS); */
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.id("SvgjsSvg1000")).click();

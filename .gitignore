@@ -1,0 +1,9 @@
+
+/.idea/
+/lib/
+Буде вилучено .gitignore
+Буде вилучено .idea/libraries/selenium_server_standalone_2_53_1.xml
+Буде вилучено .idea/libraries/selenium_server_standalone_3_0_1_.xml
+Буде вилучено drivers/
+Буде вилучено lib/
+Буде вилучено out/
