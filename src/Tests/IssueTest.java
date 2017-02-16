@@ -77,8 +77,7 @@ public class IssueTest  extends BaseTest {
             driver.findElement(By.linkText("Delete")).click();
             driver.switchTo().alert().accept();
             // the rest of the scripts can be added here
-
-
+            
         }
 
     }
