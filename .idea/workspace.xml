@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="554a7c41-9308-4911-a885-0b5629bedb24" name="Default" comment="add test2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_2_50_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Issues.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/suites/test.xml" afterPath="$PROJECT_DIR$/test.xml" />
+    <list default="true" id="554a7c41-9308-4911-a885-0b5629bedb24" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Methods/IssuePage.java" afterPath="$PROJECT_DIR$/src/Methods/IssuePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Methods/LoginPage.java" afterPath="$PROJECT_DIR$/src/Methods/LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/IssueTest.java" afterPath="$PROJECT_DIR$/src/Tests/IssueTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/LoginTest.java" afterPath="$PROJECT_DIR$/src/Tests/LoginTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/MyProfileTest.java" afterPath="$PROJECT_DIR$/src/Tests/MyProfileTest.java" />
     </list>
     <list id="6403065a-a1b0-4415-b90b-ddde713c2e0a" name="Rejected commit: Default" comment="add test2">
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/selenium-server-standalone-2.50.0.jar" afterPath="" />
@@ -36,41 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Methods/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyProfileTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/MyProfileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IssueTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tests/IssueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="130" column="68" lean-forward="false" selection-start-line="130" selection-start-column="68" selection-end-line="130" selection-end-column="68" />
+            <state relative-caret-position="-63">
+              <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +44,8 @@
       <file leaf-file-name="IssuePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Methods/IssuePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+            <state relative-caret-position="507">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,19 +81,19 @@
         <option value="$PROJECT_DIR$/src/Tests/MyProfile.java" />
         <option value="$PROJECT_DIR$/src/Methods/Base.java" />
         <option value="$PROJECT_DIR$/src/Tests/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/Methods/LoginPage.java" />
         <option value="$PROJECT_DIR$/suites/test.xml" />
         <option value="$PROJECT_DIR$/src/Tests/BaseTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/Methods/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/Tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/Methods/MyProfileTest.java" />
-        <option value="$PROJECT_DIR$/src/Tests/MyProfileTest.java" />
         <option value="$PROJECT_DIR$/src/Issues.java" />
         <option value="$PROJECT_DIR$/src/Tests/Issues.java" />
         <option value="$PROJECT_DIR$/src/Tests/IssuesTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/MyProfileTest.java" />
+        <option value="$PROJECT_DIR$/src/Methods/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/Tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/Methods/IssuePage.java" />
         <option value="$PROJECT_DIR$/src/Tests/IssueTest.java" />
       </list>
@@ -160,7 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,10 +173,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -249,13 +208,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37931034" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/suites" />
@@ -272,7 +231,7 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.IssueTest.addColumn">
+  <component name="RunManager" selected="TestNG.IssueTest.deleteColumn">
     <configuration default="false" name="IssueTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -306,7 +265,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="IssueTest.changeStatusIssue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="IssueTest.bcreateIssue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -319,7 +278,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.IssueTest" />
-      <option name="METHOD_NAME" value="changeStatusIssue" />
+      <option name="METHOD_NAME" value="bcreateIssue" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -372,7 +331,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="IssueTest.bcreateIssue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="IssueTest.createIssue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -385,7 +344,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.IssueTest" />
-      <option name="METHOD_NAME" value="bcreateIssue" />
+      <option name="METHOD_NAME" value="createIssue" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -405,7 +364,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="IssueTest.addColumn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="IssueTest.deleteColumn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Tests.*" />
@@ -418,7 +377,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.IssueTest" />
-      <option name="METHOD_NAME" value="addColumn" />
+      <option name="METHOD_NAME" value="deleteColumn" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -673,18 +632,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.IssueTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.IssueTest.changeStatusIssue" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.IssueTest.bcreateIssue" />
       <item index="3" class="java.lang.String" itemvalue="TestNG.IssueTest.reportedByMe" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.IssueTest.bcreateIssue" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.IssueTest.addColumn" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.IssueTest.createIssue" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.IssueTest.deleteColumn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.IssueTest.addColumn" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.IssueTest.reportedByMe" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.IssueTest.bcreateIssue" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.IssueTest.changeStatusIssue" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.IssueTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.IssueTest.deleteColumn" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.IssueTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.IssueTest.createIssue" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.IssueTest.reportedByMe" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.IssueTest.bcreateIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -734,39 +693,53 @@
       <option name="project" value="LOCAL" />
       <updated>1487252320774</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add test2">
+      <created>1487256048787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487256048787</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add test2">
+      <created>1487256395710</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1487256395710</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 18m 27s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest - 2017.02.17 at 12h 00m 01s.xml">
+      <configuration name="IssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 19m 58s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest - 2017.02.17 at 12h 10m 25s.xml">
+      <configuration name="IssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 22m 10s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest - 2017.02.17 at 12h 16m 40s.xml">
+      <configuration name="IssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 24m 21s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_bcreateIssue - 2017.02.17 at 11h 54m 17s.xml">
+      <configuration name="IssueTest.bcreateIssue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 25m 59s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_bcreateIssue - 2017.02.17 at 11h 56m 53s.xml">
+      <configuration name="IssueTest.bcreateIssue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 26m 59s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_createIssue - 2017.02.17 at 12h 13m 22s.xml">
+      <configuration name="IssueTest.createIssue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 34m 12s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_deleteColumn - 2017.02.17 at 12h 18m 27s.xml">
+      <configuration name="IssueTest.deleteColumn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 34m 40s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_reportedByMe - 2017.02.17 at 12h 02m 54s.xml">
+      <configuration name="IssueTest.reportedByMe" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 36m 45s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_reportedByMe - 2017.02.17 at 12h 06m 10s.xml">
+      <configuration name="IssueTest.reportedByMe" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="IssueTest_addColumn - 2017.02.16 at 16h 39m 29s.xml">
-      <configuration name="IssueTest.addColumn" configurationId="TestNG" />
+    <history-entry file="IssueTest_reportedByMe - 2017.02.17 at 12h 11m 29s.xml">
+      <configuration name="IssueTest.reportedByMe" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -788,7 +761,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28899837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29228243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -813,7 +786,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1072,14 +1045,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Issues.java" />
-    <entry file="file://$PROJECT_DIR$/src/Tests/IssuesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/IssuesTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Tests/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1090,44 +1056,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/Issues.class">
+    <entry file="file://$PROJECT_DIR$/bin/Issues.class" />
+    <entry file="file://$PROJECT_DIR$/src/Tests/MyProfileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="24" column="87" lean-forward="false" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/MyProfileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="199">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Methods/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Methods/IssuePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="65" lean-forward="true" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        <state relative-caret-position="507">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1136,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/IssueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="130" column="68" lean-forward="false" selection-start-line="130" selection-start-column="68" selection-end-line="130" selection-end-column="68" />
+        <state relative-caret-position="-63">
+          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

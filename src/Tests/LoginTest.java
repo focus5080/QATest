@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
 
 
     @Test
-    public void correctLogin() throws InterruptedIOException {
+    public void correctLogin() throws InterruptedIOException, InterruptedException {
         driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage=new LoginPage();
         LoginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
