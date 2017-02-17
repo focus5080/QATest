@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="554a7c41-9308-4911-a885-0b5629bedb24" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Methods/IssuePage.java" afterPath="$PROJECT_DIR$/src/Methods/IssuePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Methods/LoginPage.java" afterPath="$PROJECT_DIR$/src/Methods/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/IssueTest.java" afterPath="$PROJECT_DIR$/src/Tests/IssueTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/LoginTest.java" afterPath="$PROJECT_DIR$/src/Tests/LoginTest.java" />
     </list>
     <list id="6403065a-a1b0-4415-b90b-ddde713c2e0a" name="Rejected commit: Default" comment="add test2">
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/selenium-server-standalone-2.50.0.jar" afterPath="" />
@@ -707,7 +703,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487256395710</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add test2">
+      <created>1487326936168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1487326936168</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
