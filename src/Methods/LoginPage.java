@@ -2,8 +2,12 @@ package Methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.io.InterruptedIOException;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by asus on 09.02.17.
@@ -25,5 +29,11 @@ public class LoginPage {
         // driver.manage().timeouts().implicityWait(5, TimeUnit.SECONDS); */
         Thread.sleep(5000);
         driver.findElement(By.cssSelector(".log_out")).click();
+    }
+
+    public static void assertError(WebDriver driver){
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        WebElement errorMessage = driver.findElement(By.className("message"));
+        assertTrue(errorMessage.getText().contains("Invalid Email or password."));
     }
 }

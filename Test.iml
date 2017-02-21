@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="selenium-server-standalone-3.0.1" level="project" />
-    <orderEntry type="library" name="selenium-server-standalone-2.50.0" level="project" />
+    <orderEntry type="library" name="selenium-server-standalone-2.53.1" level="project" />
+    <orderEntry type="library" name="testng-6.8.8" level="project" />
   </component>
 </module>

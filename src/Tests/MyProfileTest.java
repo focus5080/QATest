@@ -16,21 +16,17 @@ public class MyProfileTest extends BaseTest {
 
     @Test
     public void openPersonalInfo() {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//*[@id='content']/div/div[1]/h2")).isDisplayed();
+        boolean displayed = driver.findElement(By.xpath("//*[@id='content']/div/div[1]/h2")).isDisplayed();
 
     }
 
     @Test
     public void changePersonalInfo() {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -40,17 +36,15 @@ public class MyProfileTest extends BaseTest {
         driver.findElement(By.id("user_last_name")).sendKeys("Test");
         driver.findElement(By.id("user_company")).clear();
         driver.findElement(By.id("user_company")).sendKeys("Test");
-        driver.findElement(By.cssSelector("span.dd-pointer.dd-pointer-down")).click();
+        driver.findElement(By.cssSelector(".dd-pointer.dd-pointer-down")).click();
         driver.findElement(By.linkText("Algeria")).click();
         driver.findElement(By.name("commit")).click();
-        driver.findElement(By.id("personal_info_notice")).isDisplayed();
+        boolean personal_info_notice = driver.findElement(By.id("personal_info_notice")).isDisplayed();
     }
 
     @Test
     public void emptyPersonalInfo() {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage=new LoginPage();
-        loginPage.login(driver,"focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

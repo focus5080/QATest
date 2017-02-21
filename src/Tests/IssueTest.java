@@ -3,7 +3,6 @@ package Tests;
 import Methods.IssuePage;
 import Methods.LoginPage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -19,14 +18,10 @@ import static org.junit.Assert.assertTrue;
 public class IssueTest  extends BaseTest {
 
     @Test
-    public void createIssue() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+    public void acreateIssue() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.createIssue(driver);
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,250)", "");
         IssuePage.deleteIssue(driver);
         LoginPage.logout(driver);
 
@@ -34,9 +29,7 @@ public class IssueTest  extends BaseTest {
 
     @Test
     public void emptyFieldIssue() throws InterruptedException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.addIssue(driver);
         WebElement errorMessage = driver.findElement(By.className("message"));
@@ -44,28 +37,91 @@ public class IssueTest  extends BaseTest {
     }
 
     @Test
-    public void changeStatusIssue() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+    public void changeStatusToBe() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.createIssue(driver);
+        WebElement from = driver.findElement(By.cssSelector(".card_message"));
+        WebElement to = driver.findElement(By.xpath(".//*/div[2]/div[3]"));
+        new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
+
+    @Test
+    public void changeStatusReopen() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.createIssue(driver);
+        WebElement from = driver.findElement(By.cssSelector(".card_message"));
+        WebElement to = driver.findElement(By.xpath(".//*/div[3]/div[3]"));
+        new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
+
+    @Test
+    public void changeStatusInProgress() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.createIssue(driver);
+        WebElement from = driver.findElement(By.cssSelector(".card_message"));
+        WebElement to = driver.findElement(By.xpath(".//*/div[4]/div[3]"));
+        new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
+
+    @Test
+    public void changeCodeReview() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.createIssue(driver);
+        WebElement from = driver.findElement(By.cssSelector(".card_message"));
+        WebElement to = driver.findElement(By.xpath(".//*/div[5]/div[3]"));
+        new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
+
+    @Test
+    public void changeStatusQAReview() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.createIssue(driver);
+        WebElement from = driver.findElement(By.cssSelector(".card_message"));
+        WebElement to = driver.findElement(By.xpath(".//*/div[6]/div[3]"));
+        new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
+
+
+    @Test
+    public void changeStatusClosed() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.createIssue(driver);
         WebElement from = driver.findElement(By.cssSelector(".card_message"));
         WebElement to = driver.findElement(By.xpath(".//*/div/div[7]"));
         new Actions(driver).dragAndDrop(from, to).perform();
+        Thread.sleep(5000);
         IssuePage.deleteIssue(driver);
         LoginPage.logout(driver);
-
     }
 
     @Test
-    public void reportedByMe() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+    public void areportedByMe() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.createIssue(driver);
-        driver.findElement(By.xpath(".//*/div/div[1]/div[2]/span[5]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath(".//*/div[2]/span[5]")).click();
         driver.findElement(By.cssSelector("div.card_message > p")).click();
         IssuePage.deleteIssue(driver);
         LoginPage.logout(driver);
@@ -74,30 +130,19 @@ public class IssueTest  extends BaseTest {
 
     @Test
     public void addColumn() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
         LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        IssuePage.addColumns(driver);
-        Thread.sleep(5000);
-        Actions action = new Actions(driver);
-        action.doubleClick(driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span"))).doubleClick().build().perform();
-        driver.findElement(By.xpath(".//*/div/div[8]/div[1]/div/input")).sendKeys("Test");
+        IssuePage.addColumn(driver);
         IssuePage.deleteColumn(driver);
         LoginPage.logout(driver);
     }
 
     @Test
     public void changeColourColumn() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.addColumns(driver);
-        Thread.sleep(5000);
-        Actions action = new Actions(driver);
-        action.doubleClick(driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span"))).doubleClick().build().perform();
-        driver.findElement(By.xpath(".//*/div/div[8]/div[1]/div/input")).sendKeys("Test1");
         driver.findElement(By.xpath(".//*/div/div[8]/div[2]")).click();
         driver.findElement(By.xpath(".//*[@id='color-picker']/ul/li[2]/span")).click();
         IssuePage.deleteColumn(driver);
@@ -106,19 +151,79 @@ public class IssueTest  extends BaseTest {
 
     @Test
     public void deleteColumn() throws InterruptedException, InterruptedIOException {
-        driver.get(baseUrl + "/users/sign_in");
-        LoginPage loginPage = new LoginPage();
-        LoginPage.login(driver, "focus5080+44@gmail.com", "focus5080");
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.addColumns(driver);
-        Thread.sleep(5000);
-        Actions action = new Actions(driver);
-        action.doubleClick(driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span"))).doubleClick().build().perform();
-        driver.findElement(By.xpath(".//*/div/div[8]/div[1]/div/input")).sendKeys("Test2");
         IssuePage.deleteColumn(driver);
         LoginPage.logout(driver);
-
     }
+
+    @Test
+    public void showColumnList() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        IssuePage.addColumns(driver);
+        driver.findElement(By.cssSelector(".btn.btn-green.open-columns-list")).click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        boolean displayed = driver.findElement(By.xpath(".//*[@id='mCSB_7']")).isDisplayed();
+    }
+
+    @Test
+    public void hideColumn() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Submitted']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn1() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='To be discussed']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn2() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Reopened']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn3() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='In Progress']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn4() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Code Review']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn5() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='QA Review']")).click();
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void hideColumn6() throws InterruptedException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Closed']")).click();
+        Thread.sleep(2000);
+    }
+
 }
 
 
