@@ -169,59 +169,80 @@ public class IssueTest  extends BaseTest {
     }
 
     @Test
-    public void hideColumn() throws InterruptedException {
+    public void hideColumn() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Submitted']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Submitted']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn1() throws InterruptedException {
+    public void hideColumn1() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='To be discussed']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='To be discussed']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn2() throws InterruptedException {
+    public void hideColumn2() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Reopened']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Reopened']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn3() throws InterruptedException {
+    public void hideColumn3() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='In Progress']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='In Progress']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn4() throws InterruptedException {
+    public void hideColumn4() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Code Review']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Code Review']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn5() throws InterruptedException {
+    public void hideColumn5() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='QA Review']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='QA Review']")).click();
+        LoginPage.logout(driver);
     }
 
     @Test
-    public void hideColumn6() throws InterruptedException {
+    public void hideColumn6() throws InterruptedException, InterruptedIOException {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Closed']")).click();
         Thread.sleep(2000);
+        IssuePage.hideColumn(driver);
+        driver.findElement(By.xpath("//label[text()='Closed']")).click();
+        LoginPage.logout(driver);
     }
 
 }

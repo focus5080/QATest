@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="554a7c41-9308-4911-a885-0b5629bedb24" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/IssueTest.java" afterPath="$PROJECT_DIR$/src/Tests/IssueTest.java" />
     </list>
     <list id="6403065a-a1b0-4415-b90b-ddde713c2e0a" name="Rejected commit: Default" comment="add test2" />
     <list id="10efe1f7-6ac7-4bda-be06-a23cdc62c929" name="Rejected commit: Rejected commit: Default" comment="add test2" />
@@ -23,8 +24,8 @@
       <file leaf-file-name="IssueTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tests/IssueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="-603">
+              <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,7 +36,7 @@
       <file leaf-file-name="IssuePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Methods/IssuePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
+            <state relative-caret-position="424">
               <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -232,7 +233,7 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.IssueTest.changeStatusReopen">
+  <component name="RunManager" selected="TestNG.IssueTest.hideColumn6">
     <configuration default="false" name="LoginTest.correctLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -640,8 +641,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.IssueTest.changeStatusReopen" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.IssueTest.hideColumn6" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.IssueTest.hideColumn6" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.IssueTest.changeStatusReopen" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.IssueTest.hideColumn1" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.IssueTest.acreateIssue" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.LoginTest.correctLogin" />
@@ -729,13 +730,17 @@
       <option name="project" value="LOCAL" />
       <updated>1487690716755</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add test2">
+      <created>1487690806059</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1487690806059</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IssueTest_areportedByMe - 2017.02.21 at 17h 01m 49s.xml">
-      <configuration name="IssueTest.areportedByMe" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="IssueTest_changeStatusReopen - 2017.02.21 at 17h 17m 13s.xml">
       <configuration name="IssueTest.changeStatusReopen" configurationId="TestNG" />
     </history-entry>
@@ -749,6 +754,9 @@
       <configuration name="IssueTest.hideColumn1" configurationId="TestNG" />
     </history-entry>
     <history-entry file="IssueTest_hideColumn6 - 2017.02.21 at 17h 11m 29s.xml">
+      <configuration name="IssueTest.hideColumn6" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="IssueTest_hideColumn6 - 2017.02.21 at 17h 30m 00s.xml">
       <configuration name="IssueTest.hideColumn6" configurationId="TestNG" />
     </history-entry>
     <history-entry file="IssueTest_reportedByMe - 2017.02.21 at 16h 58m 58s.xml">
@@ -771,14 +779,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32473117" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32473117" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31612903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31612903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1107,7 +1115,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Methods/IssuePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
+        <state relative-caret-position="424">
           <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1117,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/IssueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="-603">
+          <caret line="177" column="44" lean-forward="false" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
