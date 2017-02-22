@@ -15,7 +15,9 @@ import static org.junit.Assert.assertTrue;
 public class LoginPage {
 
 
-        public static void login(WebDriver driver, String email, String pass){
+    public void login(WebDriver driver, String email, String pass){
+
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         driver.findElement(By.id("user_email")).click();
         driver.findElement(By.id("user_email")).clear();
         driver.findElement(By.id("user_email")).sendKeys(email);
@@ -23,15 +25,15 @@ public class LoginPage {
         driver.findElement(By.id("user_password")).clear();
         driver.findElement(By.id("user_password")).sendKeys(pass);
         driver.findElement(By.name("commit")).click();
+        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
     }
 
-    public static void logout(WebDriver driver) throws InterruptedIOException, InterruptedException {
-        // driver.manage().timeouts().implicityWait(5, TimeUnit.SECONDS); */
+    public void logout(WebDriver driver) throws InterruptedIOException, InterruptedException {
         Thread.sleep(5000);
         driver.findElement(By.cssSelector(".log_out")).click();
     }
 
-    public static void assertError(WebDriver driver){
+    public void assertError(WebDriver driver){
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("Invalid Email or password."));

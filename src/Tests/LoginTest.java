@@ -18,27 +18,31 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void correctLogin() throws InterruptedIOException, InterruptedException {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
-        LoginPage.logout(driver);
+        LoginPage  loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.logout(driver);
 
     }
 
     @Test
     public void incorrectEmail() throws InterruptedIOException {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobilesffff.com", "111111");
+        LoginPage  loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobilesffff.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        LoginPage.assertError(driver);
+        loginPage.assertError(driver);
     }
 
     @Test
     public void incorrectPassword() throws InterruptedIOException {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "1112222111");
-        LoginPage.assertError(driver);
+        LoginPage  loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "1112222111");
+        loginPage.assertError(driver);
     }
 
     @Test
     public void emptyFields() throws InterruptedIOException {
-        LoginPage.login(driver,"", "");
+        LoginPage  loginPage = new LoginPage();
+        loginPage.login(driver,"", "");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("can't be blank"));

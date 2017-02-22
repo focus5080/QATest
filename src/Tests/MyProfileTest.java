@@ -16,7 +16,8 @@ public class MyProfileTest extends BaseTest {
 
     @Test
     public void openPersonalInfo() {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -26,7 +27,8 @@ public class MyProfileTest extends BaseTest {
 
     @Test
     public void changePersonalInfo() {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -44,7 +46,8 @@ public class MyProfileTest extends BaseTest {
 
     @Test
     public void emptyPersonalInfo() {
-        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
