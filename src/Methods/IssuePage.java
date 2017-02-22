@@ -24,6 +24,35 @@ public class IssuePage {
     }
 
     public static void createIssue(WebDriver driver) throws InterruptedException {
+        Thread.sleep(500);
+        driver.findElement(By.linkText("My Projects")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("testing EasyQa")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Issues")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Add new issue")).click();
+        Thread.sleep(500);
+        driver.findElement(By.id("issue_summary")).click();
+        driver.findElement(By.id("issue_summary")).sendKeys("Test Symphony");
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Bug")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Task")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("Medium")).click();
+        Thread.sleep(500);
+        driver.findElement(By.linkText("High")).click();
+        Thread.sleep(500);
+        driver.findElement(By.xpath(".//*[@id='priority-view']/div/a")).click();
+        Thread.sleep(500);
+        driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[4]/a")).click();
+        Thread.sleep(500);
+        driver.findElement(By.name("commit")).click();
+    }
+
+    public static void uploadFile(WebDriver driver) throws InterruptedException {
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("My Projects")).click();
         Thread.sleep(1000);
         driver.findElement(By.linkText("testing EasyQa")).click();
@@ -37,6 +66,11 @@ public class IssuePage {
         driver.findElement(By.linkText("High")).click();
         driver.findElement(By.cssSelector("#priority-view > div.dd-select > a.dd-selected")).click();
         driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[4]/a")).click();
+    }
+
+    public static void attachFile(WebDriver driver) throws InterruptedException {
+        WebElement attach = driver.findElement(By.xpath("//input[@type='file']"));
+        attach.sendKeys("/media/asus/New/index.png");
         driver.findElement(By.name("commit")).click();
     }
 
@@ -89,6 +123,11 @@ public class IssuePage {
         driver.findElement(By.linkText("Issues")).click();
         driver.findElement(By.cssSelector(".btn.btn-green.open-columns-list")).click();
         Thread.sleep(2000);
+    }
+
+    public static void searchIssue(WebDriver driver){
+        driver.findElement(By.xpath("//input[@id='search']")). sendKeys("Test Symphony");
+        driver.findElement(By.cssSelector(".search-btn")).click();
     }
 }
 

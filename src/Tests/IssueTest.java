@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.util.concurrent.TimeUnit;
 
@@ -22,6 +23,16 @@ public class IssueTest  extends BaseTest {
         LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage.createIssue(driver);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+
+    }
+
+    @Test
+    public void uploadFileIssue() throws InterruptedException, IOException {
+        LoginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.uploadFile(driver);
+        IssuePage.attachFile(driver);
         IssuePage.deleteIssue(driver);
         LoginPage.logout(driver);
 
@@ -245,6 +256,14 @@ public class IssueTest  extends BaseTest {
         LoginPage.logout(driver);
     }
 
+    @Test
+    public void searchIssue() throws InterruptedException, InterruptedIOException {
+        LoginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        IssuePage.createIssue(driver);
+        IssuePage.searchIssue(driver);
+        IssuePage.deleteIssue(driver);
+        LoginPage.logout(driver);
+    }
 }
 
 
