@@ -46,7 +46,7 @@ public class IssuePage {
         Thread.sleep(500);
         driver.findElement(By.xpath(".//*[@id='priority-view']/div/a")).click();
         Thread.sleep(500);
-        driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[4]/a")).click();
+        driver.findElement(By.xpath(".//*[@id='priority-view']/ul/li[4]/a")).click();
         Thread.sleep(500);
         driver.findElement(By.name("commit")).click();
     }
@@ -66,13 +66,14 @@ public class IssuePage {
         driver.findElement(By.linkText("High")).click();
         driver.findElement(By.cssSelector("#priority-view > div.dd-select > a.dd-selected")).click();
         driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[4]/a")).click();
-    }
-
-    public void attachFile(WebDriver driver) throws InterruptedException {
         WebElement attach = driver.findElement(By.xpath("//input[@type='file']"));
         attach.sendKeys("/media/asus/New/index.png");
-        driver.findElement(By.name("commit")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
+//        driver.findElement(By.linkText("Cancel"));
+        Thread.sleep(2000);
     }
+
 
     public void addColumns(WebDriver driver) throws InterruptedException {
         driver.findElement(By.linkText("My Projects")).click();
@@ -83,7 +84,7 @@ public class IssuePage {
         Thread.sleep(5000);
         Actions action = new Actions(driver);
         action.doubleClick(driver.findElement(By.xpath(".//*/div[8]/div[1]/span"))).doubleClick().build().perform();
-        driver.findElement(By.xpath(".//*/div[8]/div[1]/div/input")).sendKeys("Test");
+        driver.findElement(By.xpath("//input[@value='New status']")).sendKeys("Test");
         Thread.sleep(2000);
     }
 
