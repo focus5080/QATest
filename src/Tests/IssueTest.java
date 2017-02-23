@@ -36,7 +36,6 @@ public class IssueTest  extends BaseTest {
         loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         IssuePage issuePage = new IssuePage();
         issuePage.uploadFile(driver);
-        issuePage.attachFile(driver);
         issuePage.deleteIssue(driver);
         loginPage.logout(driver);
 
