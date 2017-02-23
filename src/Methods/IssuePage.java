@@ -65,7 +65,7 @@ public class IssuePage {
         driver.findElement(By.linkText("Medium")).click();
         driver.findElement(By.linkText("High")).click();
         driver.findElement(By.cssSelector("#priority-view > div.dd-select > a.dd-selected")).click();
-        driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//div[@id='priority-view']/ul/li[last()-1]/a")).click();
         WebElement attach = driver.findElement(By.xpath("//input[@type='file']"));
         attach.sendKeys("/media/asus/New/index.png");
         Thread.sleep(2000);
