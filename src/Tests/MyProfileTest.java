@@ -2,6 +2,7 @@ package Tests;
 
 import Methods.LoginPage;
 import Methods.MyProfilePage;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import java.io.InterruptedIOException;
@@ -35,6 +36,80 @@ public class MyProfileTest extends BaseTest {
         loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
         MyProfilePage myProfilePage = new MyProfilePage();
         myProfilePage.errorProfile(driver);
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void uploadPhotoPersonalInfo() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        myProfilePage.uploadFile(driver);
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void changePassword() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        myProfilePage.changePassword(driver);
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void correctError() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        myProfilePage.errorMessage(driver);
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void myOrganization() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        driver.findElement(By.xpath(".//*/div/ul/li[3]/a")).click();
+        driver.findElement(By.id("my_organization")).isDisplayed();
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void notificationShows() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//div[@class='tab']")).isDisplayed();
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void notificationsAllOff() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//span[@class='btn-white-red disable_all']")).click();
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void notificationsAllOn() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//span[@class='btn-white-green enable_all']")).click();
         loginPage.logout(driver);
     }
 }
