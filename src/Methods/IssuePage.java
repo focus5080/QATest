@@ -110,8 +110,8 @@ public class IssuePage {
 
     public void deleteColumn(WebDriver driver) throws InterruptedException {
         Thread.sleep(5000);
-        WebElement from = driver.findElement(By.xpath(".//*/div/div[8]/div[1]/span"));
-        WebElement to = driver.findElement(By.xpath(".//*/div[1]/div/div[2]/div/div/div/div[1]/div/div[1]/div[3]/div[3]/span"));
+        WebElement from = driver.findElement(By.xpath("//div/div[8]/div[1]"));
+        WebElement to = driver.findElement(By.xpath("//div[@class='remove-column ui-droppable']"));
         new Actions(driver).dragAndDrop(from, to).perform();
         Thread.sleep(5000);
     }
