@@ -121,8 +121,7 @@ public class MyProfileTest extends BaseTest {
         loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
         MyProfilePage myProfilePage = new MyProfilePage();
         myProfilePage.showProfile(driver);
-        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
-        driver.findElement(By.xpath("//span[@class='btn-white-red disable_all']")).click();
+        myProfilePage.notificationOff(driver);
         loginPage.logout(driver);
     }
 
@@ -132,8 +131,7 @@ public class MyProfileTest extends BaseTest {
         loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
         MyProfilePage myProfilePage = new MyProfilePage();
         myProfilePage.showProfile(driver);
-        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
-        driver.findElement(By.xpath("//span[@class='btn-white-green enable_all']")).click();
+        myProfilePage.notificationOn(driver);
         loginPage.logout(driver);
     }
 }
