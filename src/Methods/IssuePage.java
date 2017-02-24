@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -106,6 +107,8 @@ public class IssuePage {
         driver.switchTo().alert().accept();
         // the rest of the scripts can be added here
         Thread.sleep(2000);
+        driver.navigate().refresh();
+        Assert.assertTrue(driver.findElements(By.xpath("//div[@data-status-name='Submited']")).size() > 0);
     }
 
     public void deleteColumn(WebDriver driver) throws InterruptedException {
@@ -114,6 +117,8 @@ public class IssuePage {
         WebElement to = driver.findElement(By.xpath("//div[@class='remove-column ui-droppable']"));
         new Actions(driver).dragAndDrop(from, to).perform();
         Thread.sleep(5000);
+        driver.navigate().refresh();
+        Assert.assertTrue(driver.findElements(By.xpath("//div[@data-status-name='Submited']")).size() > 0);
     }
 
     public void hideColumn(WebDriver driver) throws InterruptedException {
