@@ -50,22 +50,46 @@ public class MyProfileTest extends BaseTest {
     }
 
     @Test
+    public void deletePhotoPersonalInfo() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        driver.findElement(By.id("destroy_avatar")).click();
+        driver.switchTo().alert().accept();
+        // the rest of the scripts can be added here
+        Thread.sleep(2000);
+        loginPage.logout(driver);
+    }
+
+    @Test
     public void changePassword() throws InterruptedIOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
         MyProfilePage myProfilePage = new MyProfilePage();
         myProfilePage.showProfile(driver);
         myProfilePage.changePassword(driver);
+        Thread.sleep(5000);
         loginPage.logout(driver);
     }
 
     @Test
-    public void correctError() throws InterruptedIOException, InterruptedException {
+    public void emptyPasswordField() throws InterruptedIOException, InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
         MyProfilePage myProfilePage = new MyProfilePage();
         myProfilePage.showProfile(driver);
         myProfilePage.errorMessage(driver);
+        loginPage.logout(driver);
+    }
+
+    @Test
+    public void incorrectCurrentPass() throws InterruptedIOException, InterruptedException {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        MyProfilePage myProfilePage = new MyProfilePage();
+        myProfilePage.showProfile(driver);
+        myProfilePage.incorrectCurrent(driver);
         loginPage.logout(driver);
     }
 
