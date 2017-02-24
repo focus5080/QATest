@@ -16,8 +16,9 @@ public class IssuePage {
 
     public void addIssue(WebDriver driver) throws InterruptedException {
         driver.findElement(By.linkText("My Projects")).click();
+        Thread.sleep(2000);
         driver.findElement(By.linkText("testing EasyQa")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.linkText("Issues")).click();
         driver.findElement(By.linkText("Add new issue")).click();
         driver.findElement(By.name("commit")).click();
