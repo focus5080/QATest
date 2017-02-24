@@ -88,4 +88,20 @@ public class MyProfilePage {
         WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("can't be blank"));
     }
+
+    public void notificationOff(WebDriver driver) throws InterruptedException {
+        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//span[@class='btn-white-red disable_all']")).click();
+        WebElement button = driver.findElement(By.xpath("//span[@class='btn-white-green enable_all']"));
+        button.getText().contains("Enable all");
+        Thread.sleep(2000);
+    }
+
+    public void notificationOn(WebDriver driver) throws InterruptedException {
+        driver.findElement(By.xpath(".//*/div/ul/li[4]/a")).click();
+        driver.findElement(By.xpath("//span[@class='btn-white-green enable_all']")).click();
+        WebElement button = driver.findElement(By.xpath("//span[@class='btn-white-red disable_all']"));
+        button.getText().contains("Disable all");
+        Thread.sleep(2000);
+    }
 }
