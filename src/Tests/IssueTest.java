@@ -30,6 +30,8 @@ public class IssueTest  extends BaseTest {
 
     }
 
+
+
     @Test
     public void uploadFileIssue() throws InterruptedException, IOException {
         LoginPage  loginPage = new LoginPage();
@@ -197,12 +199,14 @@ public class IssueTest  extends BaseTest {
     public void showColumnList() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
-        issuePage.addColumns(driver);
-        driver.findElement(By.cssSelector(".btn.btn-green.open-columns-list")).click();
+        issuePage.addColumn(driver);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        boolean displayed = driver.findElement(By.xpath(".//*[@id='mCSB_7']")).isDisplayed();
+        driver.findElement(By.xpath("//span[@class='drop-arrow']")).click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        WebElement field = driver.findElement(By.tagName("label"));
+        field.getText().contains("Submitted");
+        Thread.sleep(2000);
     }
 
     @Test
