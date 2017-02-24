@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.testng.Assert.assertTrue;
+
 
 /**
  * Created by asus on 22.02.17.
@@ -56,17 +57,31 @@ public class MyProfilePage {
         Thread.sleep(2000);
     }
 
-    public void changePassword(WebDriver driver){
+    public void changePassword(WebDriver driver) throws InterruptedException {
         driver.findElement(By.xpath(".//*/div/ul/li[2]/a/span")).click();
-        driver.findElement(By.id("current_password")).sendKeys("11111");
+        driver.findElement(By.id("current_password")).sendKeys("111111");
         driver.findElement(By.id("user_password")).sendKeys("111111");
         driver.findElement(By.id("user_password_confirmation")).sendKeys("111111");
-        driver.findElement(By.name("commit"));
+        driver.findElement(By.id("user_password_confirmation")).submit();
+        WebElement errorMessage = driver.findElement(By.id("personal_info_notice"));
+        errorMessage.getText().contains("Password updated");
+        Thread.sleep(2000);
+    }
+
+    public void incorrectCurrent(WebDriver driver) throws InterruptedException {
+        driver.findElement(By.xpath(".//*/div/ul/li[2]/a/span")).click();
+        driver.findElement(By.id("current_password")).sendKeys("111");
+        driver.findElement(By.id("user_password")).sendKeys("111111");
+        driver.findElement(By.id("user_password_confirmation")).sendKeys("111111");
+        driver.findElement(By.id("user_password_confirmation")).submit();
+        WebElement errorMessage = driver.findElement(By.id("personal_info_notice"));
+        errorMessage.getText().contains("Incorrect Current Password");
+        Thread.sleep(2000);
     }
 
     public void errorMessage(WebDriver driver){
         driver.findElement(By.xpath(".//*/div/ul/li[2]/a/span")).click();
-        driver.findElement(By.id("current_password")).sendKeys("11111");
+        driver.findElement(By.id("current_password")).sendKeys("");
         driver.findElement(By.id("user_password")).sendKeys("");
         driver.findElement(By.id("user_password_confirmation")).sendKeys("");
         driver.findElement(By.name("commit"));
