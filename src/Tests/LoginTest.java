@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void correctLogin() throws InterruptedIOException, InterruptedException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         loginPage.logout(driver);
 
     }
