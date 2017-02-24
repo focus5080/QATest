@@ -30,8 +30,6 @@ public class IssueTest  extends BaseTest {
 
     }
 
-
-
     @Test
     public void uploadFileIssue() throws InterruptedException, IOException {
         LoginPage  loginPage = new LoginPage();
@@ -206,6 +204,7 @@ public class IssueTest  extends BaseTest {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         WebElement field = driver.findElement(By.tagName("label"));
         field.getText().contains("Submitted");
+        issuePage.deleteColumn(driver);
         Thread.sleep(2000);
     }
 
