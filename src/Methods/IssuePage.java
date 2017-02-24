@@ -116,9 +116,6 @@ public class IssuePage {
         WebElement from = driver.findElement(By.xpath("//div/div[8]/div[1]"));
         WebElement to = driver.findElement(By.xpath("//div[@class='remove-column ui-droppable']"));
         new Actions(driver).dragAndDrop(from, to).perform();
-        Thread.sleep(5000);
-        driver.navigate().refresh();
-        Assert.assertTrue(driver.findElements(By.xpath("//div[@data-status-name='Submited']")).size() > 0);
     }
 
     public void hideColumn(WebDriver driver) throws InterruptedException {
