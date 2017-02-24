@@ -21,7 +21,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void acreateIssue() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -35,7 +35,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void uploadFileIssue() throws InterruptedException, IOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.uploadFile(driver);
         issuePage.deleteIssue(driver);
@@ -46,7 +46,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void emptyFieldIssue() throws InterruptedException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.addIssue(driver);
@@ -57,7 +57,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeStatusToBe() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -72,7 +72,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeStatusReopen() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -87,7 +87,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeStatusInProgress() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -102,7 +102,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeCodeReview() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -117,7 +117,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeStatusQAReview() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -133,7 +133,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeStatusClosed() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -148,7 +148,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void areportedByMe() throws InterruptedException, InterruptedIOException {
         LoginPage  loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
@@ -163,7 +163,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void addColumn() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.addColumn(driver);
@@ -174,7 +174,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void changeColourColumn() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.addColumns(driver);
@@ -187,7 +187,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void deleteColumn() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         IssuePage issuePage = new IssuePage();
         issuePage.addColumns(driver);
@@ -198,7 +198,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void showColumnList() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.addColumn(driver);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -212,7 +212,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Submitted']")).click();
@@ -225,7 +225,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn1() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='To be discussed']")).click();
@@ -238,7 +238,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn2() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Reopened']")).click();
@@ -251,7 +251,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn3() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='In Progress']")).click();
@@ -264,7 +264,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn4() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Code Review']")).click();
@@ -277,7 +277,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn5() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='QA Review']")).click();
@@ -290,7 +290,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void hideColumn6() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver,"vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.hideColumn(driver);
         driver.findElement(By.xpath("//label[text()='Closed']")).click();
@@ -303,7 +303,7 @@ public class IssueTest  extends BaseTest {
     @Test
     public void searchIssue() throws InterruptedException, InterruptedIOException {
         LoginPage loginPage = new LoginPage();
-        loginPage.login(driver, "vasiliy.fedortsi@thinkmobiles.com", "111111");
+        loginPage.login(driver, email, password);
         IssuePage issuePage = new IssuePage();
         issuePage.createIssue(driver);
         issuePage.searchIssue(driver);
