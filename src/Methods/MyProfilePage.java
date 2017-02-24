@@ -25,11 +25,11 @@ public class MyProfilePage {
         driver.findElement(By.linkText("My Profile")).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.id("user_first_name")).clear();
-        driver.findElement(By.id("user_first_name")).sendKeys("Test");
+        driver.findElement(By.id("user_first_name")).sendKeys("QA");
         driver.findElement(By.id("user_last_name")).clear();
-        driver.findElement(By.id("user_last_name")).sendKeys("Test");
+        driver.findElement(By.id("user_last_name")).sendKeys("QA");
         driver.findElement(By.id("user_company")).clear();
-        driver.findElement(By.id("user_company")).sendKeys("Test");
+        driver.findElement(By.id("user_company")).sendKeys("QA");
         driver.findElement(By.id("user_company")).submit();
         WebElement errorMessage = driver.findElement(By.xpath("//div[@class='success']"));
         errorMessage.isDisplayed();
