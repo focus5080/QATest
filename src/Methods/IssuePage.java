@@ -72,8 +72,7 @@ public class IssuePage {
         attach.sendKeys("/media/asus/New/index.png");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@type='submit']")).click();
-//        driver.findElement(By.linkText("Cancel"));
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
 
 
